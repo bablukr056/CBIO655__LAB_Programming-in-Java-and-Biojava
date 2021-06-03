@@ -1,0 +1,153 @@
+
+Q. 1 Create two integer variables and do basic arithmetic operations and print the values. 
+
+public class arithmetic {
+
+	public static void main(String[] args) {
+		int a,b,add,sub,mult;
+		float div;
+		a=100;
+		b=5;
+		add=a+b;
+		sub=a-b;
+		mult=a*b;
+		div=a/b;
+		System.out.println("Addition : "+add);
+		System.out.println("Subtraction : "+sub);
+		System.out.println("Multiplication : "+mult);
+		System.out.println("Division : "+div);
+	}
+}
+
+**********************************************************************************************
+
+Q.2 Create a variable called DNA and store "ATACGATACAA",print dn.
+
+public class store {
+
+	public static void main(String[] args) {
+		String dna;
+		dna="ATACGATACAA";
+		System.out.println("Stored DNA Sequence : "+dna);
+	}
+
+}
+
+***********************************************************************************************
+
+Q. 3 Create a class with list of variables with names of amino acids and store the molecular weights and print amino acid and its weight. 
+
+ public class Amino_acid_weight {
+
+	public static void main(String[] args) {
+		String a[]= {"v","a","s","t","c"};
+		int mw[]= {117,89,105,119,121};
+		for(int i=0;i<5;i++)
+		{
+			System.out.println("Molecular weight of different amino acid " +a[i]+ " is : "+mw[i]);
+		}
+	}
+
+}
+
+***********************************************************************************************
+
+Q. 4 Create a string array with 20 amino acids and print them in alphabetical order. 
+
+import java.util.Arrays;
+public class sortaminoacid {
+	public static void main(String[] args) {
+		String amino[]= {"G","A","S","T","C","V","L","I","M","P","F","Y","W","D","E","N","Q","H","K","R"};
+		Arrays.sort(amino);
+		System.out.println("Amino acids in sorted order: "+Arrays.toString(amino));
+	}
+}
+
+***********************************************************************************************
+Q. 5 Create an double array of 10 elements & find its average. 
+
+public class avg {
+
+	public static void main(String[] args) {
+		double arr1[]= {10,20,30,40,50,60,70,80,90,100},arr2[]= {111,121,131,141,151,161,171,181,191,201},sum=0,sum1=0,avg=0;
+		for(int i=0;i<10;i++)
+		{
+			sum=sum+arr1[i];
+			sum1=sum1+arr2[i];
+		}
+		avg=((sum+sum1)/20);
+		System.out.println("Average of arrays:" +avg);
+	}
+}
+
+************************************************************************************************
+Q. 6 Create a class with 5 subjects and calculate the % and if the % is above 50 print pass. 
+
+class Subject
+{
+ public static void main(String args[])
+ {
+  float avg;
+  int maths=78;
+  int phy=56;
+  int chem=69;
+  int bio=88;
+  int lang=45;
+
+  avg=(maths+phy+chem+bio+lang)/5;
+  System.out.print("Average of all subject marks: "+avg+" - ");
+  if(avg>=50.0)
+  {
+   System.out.print("Pass");
+  }
+  else
+  {
+   System.out.print("Fail");
+  }
+ }
+}
+
+************************************************************************************************
+
+Q. 7 Print fibonacci serise.
+
+import java.util.Scanner;
+public class Fibonacci 
+{
+    public static void main(String[] args) 
+    {
+        int n, a = 0, b = 0, c = 1;
+        Scanner s = new Scanner(System.in);
+        System.out.print("Enter value :");
+        n = s.nextInt();
+        System.out.print("Fibonacci Series of given number: ");
+        for(int i = 1; i <= n; i++)
+        {
+            a = b;
+            b = c;
+            c = a + b;
+            System.out.print(a+" ");
+        }
+    }
+}
+
+************************************************************************************************
+
+Q. 8 Create a double array of 10 elements and find its average. 
+
+public class array_avg {
+
+	public static void main(String[] args) {
+		double arr1[]= {11,22,33,44,25,46,17,18,79,10},arr2[]= {11,12,13,14,15,16,17,18,19,20},sum=0,sum1=0,avg=0;
+		for(int i=0;i<10;i++)
+		{
+			sum=sum+arr1[i];
+			sum1=sum1+arr2[i];
+		}
+		avg=((sum+sum1)/20);
+		System.out.println("Average of given arrays:" +avg);
+	}
+}
+
+***************************************************************************************************
+
